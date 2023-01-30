@@ -6,6 +6,7 @@ pygame.init()
 Width, Height = 1000, 800
 Bg_color = (205, 105, 0)
 YELLOW = (255, 255, 0)
+BLUE = (100, 149, 237)
 Window = pygame.display.set_mode((Width, Height))
 pygame.display.set_caption("Solar system simulation")
 
@@ -44,7 +45,9 @@ def main():
     sun = Planet(0, 0, 35, YELLOW, 1.9891 * 10**30)
     sun.sun = True
 
-    solarSystem = [sun]
+    earth = Planet(-1 * Planet.AU, 0, 16, BLUE, 5.97 * 10**24)
+
+    solarSystem = [sun, earth]
 
     while run:
         # Set framerate
