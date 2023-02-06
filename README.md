@@ -12,6 +12,7 @@
     <img src="https://kidspressmagazine.com/wp-content/uploads/2014/04/dreamstime_xl_289728922.jpg" width="400" height="350" class="info"> 
     <img src="./myImage/note1.jpg" width="400" height="350" class="info">
 </div>
+
 <style>
 .img {
     display: block;
