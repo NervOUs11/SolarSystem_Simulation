@@ -122,20 +122,24 @@ def main():
     mars.y_velocity = 24.1 * 1000
 
     jupiter = Planet(-1.75 * Planet.AU, 0, 20, GOLDENROD, 1.8986 * 10**27)
-    jupiter.y_velocity = 13.1 * 1000
+    # jupiter.y_velocity = 13.1 * 1000
+    jupiter.y_velocity = 22 * 1000
 
     saturn = Planet(2.1 * Planet.AU, 0, 18, MEDIUMPURPLE, 5.6846 * 10**26)
-    saturn.y_velocity = 9.7 * 1000
+    # saturn.y_velocity = 9.7 * 1000
+    saturn.y_velocity = 22 * 1000
 
     uranus = Planet(-2.45 * Planet.AU, 0, 17, LIGHTBLUE, 8.662 * 10**25)
-    uranus.y_velocity = 6.8 * 1000
+    # uranus.y_velocity = 6.8 * 1000
+    uranus.y_velocity = 20 * 1000
 
     neptune = Planet(2.8 * Planet.AU, 0, 17, DODGERBLUE, 1.0243 * 10**26)
-    neptune.y_velocity = 5.4 * 1000
+    # neptune.y_velocity = 5.4 * 1000
+    neptune.y_velocity = 15 * 1000
 
 
     # solarSystem = [sun, mercury, venus, earth, mars, jupiter, saturn, uranus, neptune]
-    solarSystem = [sun, mercury, venus, earth, mars]
+    solarSystem = [sun, mercury, venus, earth, mars, jupiter, saturn]
 
     while run:
         # Set framerate
