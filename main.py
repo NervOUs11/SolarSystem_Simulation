@@ -112,22 +112,22 @@ def main():
     mercury = Planet(-0.35 * Planet.AU, 0, 9, DARKGRAY, 0.33 * 10**24)
     mercury.y_velocity = 47.9 * 1000
 
-    venus = Planet(0.7 * Planet.AU, 0, 15, BROWN, 4.87 * 10**24)
+    venus = Planet(0.7 * Planet.AU, 0, 14, BROWN, 4.87 * 10**24)
     venus.y_velocity = 35 * 1000
 
-    earth = Planet(-1.05 * Planet.AU, 0, 16, MEDIUMBLUE, 5.97 * 10**24)
+    earth = Planet(-1 * Planet.AU, 0, 15, MEDIUMBLUE, 5.97 * 10**24)
     earth.y_velocity = 29.8 * 1000
 
-    mars = Planet(1.4 * Planet.AU, 0, 12, RED, 0.64 * 10**24)
+    mars = Planet(1.4 * Planet.AU, 0, 11, RED, 0.64 * 10**24)
     mars.y_velocity = 24.1 * 1000
 
-    jupiter = Planet(-1.75 * Planet.AU, 0, 20, GOLDENROD, 1.8986 * 10**27)
+    jupiter = Planet(-1.7 * Planet.AU, 0, 19, GOLDENROD, 1.8986 * 10**27)
     # jupiter.y_velocity = 13.1 * 1000
-    jupiter.y_velocity = 22 * 1000
+    jupiter.y_velocity = 22.5 * 1000
 
-    saturn = Planet(2.1 * Planet.AU, 0, 18, MEDIUMPURPLE, 5.6846 * 10**26)
+    saturn = Planet(2.1 * Planet.AU, 0, 17, MEDIUMPURPLE, 5.6846 * 10**26)
     # saturn.y_velocity = 9.7 * 1000
-    saturn.y_velocity = 22 * 1000
+    saturn.y_velocity = 20 * 1000
 
     uranus = Planet(-2.45 * Planet.AU, 0, 17, LIGHTBLUE, 8.662 * 10**25)
     # uranus.y_velocity = 6.8 * 1000
