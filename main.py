@@ -23,7 +23,7 @@ pygame.display.set_caption("Solar system simulation")
 class Planet:
     AU = 149.6e6 * 1000  # astronomical unit
     G = 6.67e-11
-    SCALE = 190 / AU  # convert real scale to simulation scale
+    SCALE = 160 / AU  # convert real scale to simulation scale
     TIMESTEP = 24*60*60  # 1 day
 
     def __init__(self, x, y, radius, color, mass):
@@ -105,41 +105,36 @@ def main():
     clock = pygame.time.Clock()
 
     # Create the sun
-    sun = Planet(0, 0, 35, DARKORANGE, 1.9891 * 10**30)
+    sun = Planet(0, 0, 30, DARKORANGE, 1.9891 * 10**30)
     sun.sun = True
 
     # Create planets
-    mercury = Planet(-0.35 * Planet.AU, 0, 9, DARKGRAY, 0.33 * 10**24)
+    mercury = Planet(-0.35 * Planet.AU, 0, 5, DARKGRAY, 0.33 * 10**24)
     mercury.y_velocity = 47.9 * 1000
 
-    venus = Planet(0.7 * Planet.AU, 0, 14, BROWN, 4.87 * 10**24)
+    venus = Planet(0.7 * Planet.AU, 0, 7, BROWN, 4.87 * 10**24)
     venus.y_velocity = 35 * 1000
 
-    earth = Planet(-1 * Planet.AU, 0, 15, MEDIUMBLUE, 5.97 * 10**24)
+    earth = Planet(-1 * Planet.AU, 0, 8, MEDIUMBLUE, 5.97 * 10**24)
     earth.y_velocity = 29.8 * 1000
 
-    mars = Planet(1.4 * Planet.AU, 0, 11, RED, 0.64 * 10**24)
+    mars = Planet(1.4 * Planet.AU, 0, 6, RED, 0.64 * 10**24)
     mars.y_velocity = 24.1 * 1000
 
-    jupiter = Planet(-1.7 * Planet.AU, 0, 19, GOLDENROD, 1.8986 * 10**27)
-    # jupiter.y_velocity = 13.1 * 1000
+    jupiter = Planet(-1.7 * Planet.AU, 0, 22, GOLDENROD, 1.8986 * 10**27)
     jupiter.y_velocity = 22.5 * 1000
 
-    saturn = Planet(2.1 * Planet.AU, 0, 17, MEDIUMPURPLE, 5.6846 * 10**26)
-    # saturn.y_velocity = 9.7 * 1000
+    saturn = Planet(2.2 * Planet.AU, 0, 16, MEDIUMPURPLE, 5.6846 * 10**26)
     saturn.y_velocity = 20 * 1000
 
-    uranus = Planet(-2.45 * Planet.AU, 0, 17, LIGHTBLUE, 8.662 * 10**25)
-    # uranus.y_velocity = 6.8 * 1000
-    uranus.y_velocity = 20 * 1000
+    uranus = Planet(-2.45 * Planet.AU, 0, 12, LIGHTBLUE, 8.662 * 10**25)
+    uranus.y_velocity = 19 * 1000
 
-    neptune = Planet(2.8 * Planet.AU, 0, 17, DODGERBLUE, 1.0243 * 10**26)
-    # neptune.y_velocity = 5.4 * 1000
-    neptune.y_velocity = 15 * 1000
+    neptune = Planet(2.8 * Planet.AU, 0, 14, DODGERBLUE, 1.0243 * 10**26)
+    neptune.y_velocity = 18 * 1000
 
 
-    # solarSystem = [sun, mercury, venus, earth, mars, jupiter, saturn, uranus, neptune]
-    solarSystem = [sun, mercury, venus, earth, mars, jupiter, saturn]
+    solarSystem = [sun, mercury, venus, earth, mars, jupiter, saturn, uranus, neptune]
 
     while run:
         # Set framerate
